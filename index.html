@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit 2 Star - Mode Luxe Accessible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .font-inter { font-family: 'Inter', sans-serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #000000 0%, #404040 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1a1a1a 0%, #525252 100%);
+            transform: translateY(-1px);
+        }
+        
+        .product-image {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #000000;
+        }
+    </style>
+</head>
+<body class="font-inter bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <svg width="220" height="40" viewBox="0 0 220 40" class="logo-svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1a1a1a"/>
+                                <stop offset="50%" style="stop-color:#2d2d2d"/>
+                                <stop offset="100%" style="stop-color:#000000"/>
+                            </linearGradient>
+                            <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#000000"/>
+                                <stop offset="100%" style="stop-color:#333333"/>
+                            </linearGradient>
+                            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ffd700"/>
+                                <stop offset="50%" style="stop-color:#ffed4e"/>
+                                <stop offset="100%" style="stop-color:#d4af37"/>
+                            </linearGradient>
+                            <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#dc2626"/>
+                                <stop offset="50%" style="stop-color:#ef4444"/>
+                                <stop offset="100%" style="stop-color:#b91c1c"/>
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Main logo circle with urban style -->
+                        <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" stroke="#ffd700" stroke-width="2"/>
+                        
+                        <!-- Crown-like design inspired by the image -->
+                        <path d="M6 15 L11 10 L16 12 L20 8 L24 12 L29 10 L34 15 L32 25 L8 25 Z" fill="url(#goldGradient)" stroke="#000" stroke-width="0.5"/>
+                        
+                        <!-- Central "2" with bold styling -->
+                        <text x="20" y="23" text-anchor="middle" fill="#000000" font-size="16" font-weight="900" font-family="Arial">2</text>
+                        
+                        <!-- Red accent elements -->
+                        <circle cx="14" cy="18" r="2" fill="url(#redGradient)" opacity="0.9"/>
+                        <circle cx="26" cy="18" r="2" fill="url(#redGradient)" opacity="0.9"/>
+                        
+                        <!-- Text "OUTFIT" with urban font style -->
+                        <text x="50" y="18" fill="url(#textGradient)" font-size="16" font-weight="900" font-family="Arial" letter-spacing="1.5px">OUTFIT</text>
+                        
+                        <!-- Large stylized "2" with street style -->
+                        <text x="130" y="28" fill="url(#goldGradient)" font-size="32" font-weight="900" font-family="Arial" stroke="#000" stroke-width="0.5">2</text>
+                        
+                        <!-- Text "STAR" -->
+                        <text x="155" y="32" fill="url(#textGradient)" font-size="16" font-weight="900" font-family="Arial" letter-spacing="1.5px">STAR</text>
+                        
+                        <!-- Urban decorative elements -->
+                        <rect x="50" y="22" width="75" height="2" fill="url(#goldGradient)" opacity="0.8"/>
+                        <rect x="150" y="12" width="50" height="1.5" fill="url(#redGradient)" opacity="0.7"/>
+                        
+                        <!-- Street-style stars -->
+                        <polygon points="205,15 206.5,17.5 209,17.5 207.2,19 207.8,21.5 205,20.2 202.2,21.5 202.8,19 201,17.5 203.5,17.5" fill="url(#goldGradient)"/>
+                        <polygon points="211,21 212,23 213.5,23 212.5,24 213,26 211,25 209,26 209.5,24 208.5,23 210,23" fill="url(#redGradient)"/>
+                        <polygon points="207,28 208,30 209.5,30 208.5,31 209,33 207,32 205,33 205.5,31 204.5,30 206,30" fill="url(#goldGradient)"/>
+                    </svg>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-black">Accueil</a>
+                    <a href="#collection" class="nav-link text-sm font-medium text-gray-700 hover:text-black">Collection</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-gray-700 hover:text-black">Contact</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-black transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <button class="text-gray-700 hover:text-black transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                    <button id="cartButton" class="text-gray-700 hover:text-black transition-colors relative">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"/>
+                        </svg>
+                        <span id="cartCounter" class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-4 h-4 flex items-center justify-center font-medium">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-4xl">
+                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+                        Mode de luxe<br/>
+                        <span class="text-gradient">accessible à tous</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+                        Découvrez les styles de star avec des réductions jusqu'à 80%
+                    </p>
+                    <button class="btn-primary text-white px-8 py-4 rounded-none text-sm font-medium tracking-wide uppercase">
+                        Découvrir la collection
+                    </button>
+                </div>
+                <div class="relative">
+                    <!-- Hero Image -->
+                    <div class="w-full h-96 rounded-lg shadow-2xl overflow-hidden relative">
+                        <img src="https://cdn.shopify.com/s/files/1/0511/6107/1815/files/marque_independante_streetwear_Amoses_2025.webp?v=1752533201" 
+                             alt="Collection streetwear Outfit 2 Star" 
+                             class="w-full h-full object-cover object-center"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG if image fails -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center" style="display: none;">
+                            <svg width="200" height="200" viewBox="0 0 200 200" class="opacity-60">
+                                <defs>
+                                    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d4af37"/>
+                                        <stop offset="100%" style="stop-color:#ffd700"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Fashion silhouette -->
+                                <path d="M80 40 L120 40 L125 60 L130 160 L70 160 L75 60 Z" fill="url(#heroGradient)" opacity="0.8"/>
+                                <circle cx="100" cy="25" r="15" fill="url(#heroGradient)" opacity="0.8"/>
+                                <path d="M75 60 L60 80 L65 120 L75 115 Z" fill="url(#heroGradient)" opacity="0.6"/>
+                                <path d="M125 60 L140 80 L135 120 L125 115 Z" fill="url(#heroGradient)" opacity="0.6"/>
+                                <!-- Star decoration -->
+                                <path d="M100 100 L105 110 L115 110 L107 117 L110 127 L100 122 L90 127 L93 117 L85 110 L95 110 Z" fill="#ffffff" opacity="0.9"/>
+                                <text x="100" y="125" text-anchor="middle" fill="#000000" font-size="12" font-weight="bold">2</text>
+                            </svg>
+                        </div>
+                        
+                        <!-- Dark overlay for better text readability -->
+                        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collection -->
+    <section id="collection" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4">Collection Vedette</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-8">
+                    Des pièces d'exception sélectionnées pour leur qualité et leur style intemporel
+                </p>
+                
+                <!-- Filtres de catégories -->
+                <div class="flex justify-center space-x-4 mb-8">
+                    <button id="filterAll" class="category-filter active px-6 py-3 rounded-full font-semibold transition-all duration-300 bg-black text-white">
+                        Tout voir
+                    </button>
+                    <button id="filterMen" class="category-filter px-6 py-3 rounded-full font-semibold transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200">
+                        👨 Homme
+                    </button>
+                    <button id="filterWomen" class="category-filter px-6 py-3 rounded-full font-semibold transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200">
+                        👩 Femme
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://cdn.shopify.com/s/files/1/0511/6107/1815/files/marque_independante_streetwear_Amoses_2025.webp?v=1752533201" 
+                             alt="Costume Elite 2 Star" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="140" viewBox="0 0 120 140" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="suitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1a1a2e"/>
+                                        <stop offset="50%" style="stop-color:#16213e"/>
+                                        <stop offset="100%" style="stop-color:#0f3460"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30 40 L90 40 L95 50 L95 120 L85 130 L35 130 L25 120 L25 50 Z" fill="url(#suitGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="95" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">2</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Costume Elite 2 Star</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-50%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Élégance masculine premium pour occasions spéciales</p>
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">22000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">44K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Collection Divin -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://cdn.shopify.com/s/files/1/0511/6107/1815/files/divinbydivin.webp?v=1752533202" 
+                             alt="Collection Divin 2 Star" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+
+                        
+
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style="display: none;">
+                            <svg width="100" height="150" viewBox="0 0 100 150" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="dressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#8b5cf6"/>
+                                        <stop offset="50%" style="stop-color:#a855f7"/>
+                                        <stop offset="100%" style="stop-color:#c084fc"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M35 30 L65 30 L70 45 L75 130 L25 130 L30 45 Z" fill="url(#dressGradient)" stroke="#e879f9" stroke-width="1"/>
+                                <text x="50" y="85" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="bold">2</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Set Divin 2 Star</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-50%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Ensemble élégant culotte + t-shirt collection exclusive</p>
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">15000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">30K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 - Pull Streetwear Premium -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://www.rubinokids.com/cdn/shop/files/image_97523a14-daa3-451b-9fb0-3991d1b03011.jpg?v=1754095738&width=1000" 
+                             alt="Pull Streetwear Premium 2 Star" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="140" viewBox="0 0 120 140" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="pullGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1a1a2e"/>
+                                        <stop offset="50%" style="stop-color:#16213e"/>
+                                        <stop offset="100%" style="stop-color:#0f3460"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30 40 L90 40 L95 50 L95 120 L85 130 L35 130 L25 120 L25 50 Z" fill="url(#pullGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="95" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">2</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Pull Streetwear Premium 2 Star</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-52%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Pull oversize tendance avec imprimé graphique exclusif</p>
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">12000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">25K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Product 4 - Lunettes Chrome Heart -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/1200x/44/01/91/4401918a4187fb74402514fbd5687c1f.jpg" 
+                             alt="Lunettes Chrome Heart" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center" style="display: none;">
+                            <svg width="140" height="60" viewBox="0 0 140 60" class="opacity-80">
+                                <circle cx="40" cy="30" r="20" fill="#1f2937" opacity="0.8" stroke="#d4af37" stroke-width="2"/>
+                                <circle cx="100" cy="30" r="20" fill="#1f2937" opacity="0.8" stroke="#d4af37" stroke-width="2"/>
+                                <path d="M60 30 Q70 25 80 30" fill="none" stroke="#d4af37" stroke-width="3"/>
+                                <path d="M20 30 Q10 25 5 30" fill="none" stroke="#d4af37" stroke-width="3"/>
+                                <path d="M120 30 Q130 25 135 30" fill="none" stroke="#d4af37" stroke-width="3"/>
+                                <text x="40" y="35" text-anchor="middle" fill="#d4af37" font-size="12" font-weight="bold">2</text>
+                                <text x="100" y="35" text-anchor="middle" fill="#d4af37" font-size="12" font-weight="bold">★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Lunettes Chrome Heart</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-47%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Style iconique des célébrités avec finitions premium</p>
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">8000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">15K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 - Sandy Liang x Salomon XT Whisper -->
+                <div class="group card-hover product-item" data-category="women">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://www.lesitedelasneaker.com/wp-content/images/2025/01/banner-sandy-liang-salomon-xt-whisper-l47846300-1100x620.jpg" 
+                             alt="Sandy Liang x Salomon XT Whisper" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-pink-100 to-purple-200 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="sneakerGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ec4899"/>
+                                        <stop offset="50%" style="stop-color:#f472b6"/>
+                                        <stop offset="100%" style="stop-color:#fbbf24"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#sneakerGradient1)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#000" font-size="10" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Sandy Liang x Salomon XT Whisper</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-40%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Collaboration exclusive streetwear féminin</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">30000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">50K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 - Nike Air VaporMax Plus -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://cdn.lesitedelasneaker.com/wp-content/images/2018/01/nike-air-vapormax-plus-photo-blue-924453-401.jpg" 
+                             alt="Nike Air VaporMax Plus Photo Blue" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="sneakerGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3b82f6"/>
+                                        <stop offset="50%" style="stop-color:#60a5fa"/>
+                                        <stop offset="100%" style="stop-color:#93c5fd"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#sneakerGradient2)" stroke="#1e40af" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Nike Air VaporMax Plus Photo Blue</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-63%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Technologie Air Max révolutionnaire</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">15000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">40K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 - Balenciaga Curb Sneakers -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://cdn.clothbase.com/uploads/afe0c63c-329e-46b1-8087-78bfa5ca5628/ssense-exclusive-black-curb-sneakers.jpg" 
+                             alt="Balenciaga Curb Sneakers Black" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="sneakerGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1f2937"/>
+                                        <stop offset="50%" style="stop-color:#374151"/>
+                                        <stop offset="100%" style="stop-color:#000000"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#sneakerGradient3)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#d4af37" font-size="10" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Balenciaga Curb Sneakers Black</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-40%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Luxe streetwear avec design iconique</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">18000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">30K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Product 9 - Nike Air Force 1 Blanches -->
+                <div class="group card-hover product-item" data-category="women">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-5QFp5Z.png" 
+                             alt="Nike Air Force 1 Low White" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="af1WhiteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffffff"/>
+                                        <stop offset="50%" style="stop-color:#f8fafc"/>
+                                        <stop offset="100%" style="stop-color:#e2e8f0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#af1WhiteGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#000" font-size="10" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Nike Air Force 1 Low White</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-68%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Icône blanche intemporelle pour tous styles</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">10000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">31K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 - Lanvin Curb Sneakers -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://cdn.shopify.com/s/files/1/0419/1525/products/Lanvin-Curb-Sneaker-White-Blue-1_1024x1024.jpg?v=1571438298" 
+                             alt="Lanvin Curb Sneakers White Blue" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-blue-100 to-white flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="lanvinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3b82f6"/>
+                                        <stop offset="50%" style="stop-color:#ffffff"/>
+                                        <stop offset="100%" style="stop-color:#e2e8f0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#lanvinGradient)" stroke="#3b82f6" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Lanvin Curb Sneakers White Blue</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-45%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Luxe français avec design avant-gardiste</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">28000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">51K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 - Sac Louis Vuitton -->
+                <div class="group card-hover product-item" data-category="women">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/1200x/17/44/4f/17444f657a774a8069bfbfd17b6e637f.jpg" 
+                             alt="Sac Louis Vuitton Premium" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-amber-100 to-yellow-200 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="100" viewBox="0 0 120 100" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="lvGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d4af37"/>
+                                        <stop offset="50%" style="stop-color:#ffd700"/>
+                                        <stop offset="100%" style="stop-color:#b8860b"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Sac à main forme -->
+                                <path d="M20 35 Q20 30 25 30 L95 30 Q100 30 100 35 L100 75 Q100 80 95 80 L25 80 Q20 80 20 75 Z" fill="url(#lvGradient)" stroke="#8b4513" stroke-width="2"/>
+                                <!-- Poignées -->
+                                <path d="M35 30 Q35 20 45 20 Q55 20 55 30" fill="none" stroke="#8b4513" stroke-width="3"/>
+                                <path d="M65 30 Q65 20 75 20 Q85 20 85 30" fill="none" stroke="#8b4513" stroke-width="3"/>
+                                <!-- Logo LV stylisé -->
+                                <text x="60" y="60" text-anchor="middle" fill="#8b4513" font-size="16" font-weight="bold" font-family="serif">LV</text>
+                                <text x="60" y="75" text-anchor="middle" fill="#000" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">ASIC Premium Collection</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-53%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Sneakers ASIC haute performance et style urbain</p>
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">14000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">30K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 - Nouveau Lanvin Premium -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/1200x/1a/ac/80/1aac80ef549e3924f64d72ecff94e537.jpg" 
+                             alt="Lanvin Premium Collection" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-purple-100 to-gray-200 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="140" viewBox="0 0 120 140" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="lanvinNewGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#8b5cf6"/>
+                                        <stop offset="50%" style="stop-color:#a855f7"/>
+                                        <stop offset="100%" style="stop-color:#c084fc"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30 40 L90 40 L95 50 L95 120 L85 130 L35 130 L25 120 L25 50 Z" fill="url(#lanvinNewGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="95" text-anchor="middle" fill="#d4af37" font-size="12" font-weight="bold">L</text>
+                                <text x="60" y="110" text-anchor="middle" fill="#000" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">New Balance Premium Collection</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-68%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Sneakers New Balance authentiques, confort et style</p>
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">16000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">50K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 - Rick Owens -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/736x/6e/31/7f/6e317f35be76e176bd4a7b4e13a7f38b.jpg" 
+                             alt="Rick Owens Premium Collection" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="rickOwensGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1f2937"/>
+                                        <stop offset="50%" style="stop-color:#374151"/>
+                                        <stop offset="100%" style="stop-color:#000000"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#rickOwensGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#d4af37" font-size="10" font-weight="bold">RO</text>
+                                <text x="60" y="68" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Rick Owens Premium Collection</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-60%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Design avant-gardiste et luxe streetwear iconique</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">20000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">50K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 14 - Dior B22 White -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/736x/dd/8c/38/dd8c38ac93394fb7d4470674b60af2d1.jpg" 
+                             alt="Dior B22 White Premium Collection" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="diorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffffff"/>
+                                        <stop offset="50%" style="stop-color:#f8fafc"/>
+                                        <stop offset="100%" style="stop-color:#e2e8f0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#diorGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#000" font-size="10" font-weight="bold">DIOR</text>
+                                <text x="60" y="68" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Dior B22 White Premium Collection</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-67%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Luxe français iconique avec design futuriste blanc</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">20000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">60K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 15 - Balenciaga Track -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/736x/ec/a7/0a/eca70a3a5f256779fb16ecfe4abf7147.jpg" 
+                             alt="Balenciaga Track Premium Collection" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="balenciagaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1f2937"/>
+                                        <stop offset="50%" style="stop-color:#374151"/>
+                                        <stop offset="100%" style="stop-color:#000000"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#balenciagaGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">TRACK</text>
+                                <text x="60" y="68" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Balenciaga Track Premium Collection</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-50%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Design futuriste et technologie de pointe</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">100000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">200K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 16 - Nouvelle Sneaker Premium -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/736x/08/95/ff/0895ff51cbc94857f9ffd58e5efc902d.jpg" 
+                             alt="Sneaker Premium Collection 2 Star" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-blue-100 to-white flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="newSneakerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3b82f6"/>
+                                        <stop offset="50%" style="stop-color:#ffffff"/>
+                                        <stop offset="100%" style="stop-color:#e2e8f0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#newSneakerGradient)" stroke="#3b82f6" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">Sneaker Premium Collection 2 Star</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-55%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Design moderne et confort exceptionnel</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">18000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">40K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 17 - Jordan 4 Black Cat -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/736x/26/1d/61/261d61304c02c14a56a8ea1b3388082a.jpg" 
+                             alt="Jordan 4 Black Cat Premium" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="jordanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1f2937"/>
+                                        <stop offset="50%" style="stop-color:#000000"/>
+                                        <stop offset="100%" style="stop-color:#374151"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#jordanGradient)" stroke="#d4af37" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">JORDAN</text>
+                                <text x="60" y="68" text-anchor="middle" fill="#d4af37" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">NOCTA x Nike Premium Black</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-70%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Collection exclusive Drake NOCTA en édition noire</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">15000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">50K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 18 - Jordan 1 High OG Chicago -->
+                <div class="group card-hover product-item" data-category="men">
+                    <div class="aspect-square mb-4 overflow-hidden border border-gray-100 rounded-lg relative">
+                        <img src="https://i.pinimg.com/736x/f8/e6/3e/f8e63e0e890637d4d94c492cb7401def.jpg" 
+                             alt="Jordan 1 High OG Chicago Premium" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <!-- Fallback SVG -->
+                        <div class="w-full h-full bg-gradient-to-br from-red-100 to-white flex items-center justify-center" style="display: none;">
+                            <svg width="120" height="80" viewBox="0 0 120 80" class="opacity-80">
+                                <defs>
+                                    <linearGradient id="chicagoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#dc2626"/>
+                                        <stop offset="50%" style="stop-color:#ffffff"/>
+                                        <stop offset="100%" style="stop-color:#000000"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 50 Q30 35 60 40 Q90 45 100 50 Q95 65 60 60 Q25 55 20 50 Z" fill="url(#chicagoGradient)" stroke="#dc2626" stroke-width="1"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#000" font-size="8" font-weight="bold">CHICAGO</text>
+                                <text x="60" y="68" text-anchor="middle" fill="#dc2626" font-size="8" font-weight="bold">2★</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold text-lg">NOCTA x Nike Premium Chicago</h3>
+                            <span class="bg-red-600 text-white px-2 py-1 text-xs font-medium rounded">-70%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Collection Drake NOCTA coloris rouge, blanc et noir</p>
+                        
+                        <!-- Sélecteur de pointure -->
+                        <div class="mb-3">
+                            <label class="block text-xs font-medium text-gray-700 mb-2">Pointure:</label>
+                            <select class="size-selector w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Choisir une pointure</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+                        
+                        <div class="text-xs text-green-600 font-medium mb-2">📦 Livraison: 7-14 jours</div>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="space-x-2">
+                                <span class="text-2xl font-bold">15000 FCFA</span>
+                                <span class="text-gray-400 line-through text-sm">50K FCFA</span>
+                            </div>
+                            <button class="btn-primary text-white px-6 py-2 text-sm font-medium tracking-wide rounded" disabled>
+                                Choisir pointure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl lg:text-5xl font-bold mb-4">Restez Informé</h3>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Recevez nos offres exclusives et les dernières tendances mode Outfit 2 Star
+            </p>
+            <div class="max-w-md mx-auto flex rounded-lg overflow-hidden">
+                <input type="email" placeholder="Votre adresse email" class="flex-1 px-6 py-4 text-black border-0 focus:outline-none">
+                <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-4 font-bold tracking-wide hover:from-yellow-500 hover:to-yellow-700 transition-all">
+                    S'abonner
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="mb-6">
+                        <svg width="200" height="35" viewBox="0 0 200 35" class="logo-svg-footer">
+                            <defs>
+                                <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#374151"/>
+                                    <stop offset="50%" style="stop-color:#4b5563"/>
+                                    <stop offset="100%" style="stop-color:#374151"/>
+                                </linearGradient>
+                                <linearGradient id="textGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#374151"/>
+                                    <stop offset="100%" style="stop-color:#6b7280"/>
+                                </linearGradient>
+                                <linearGradient id="goldGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ffd700"/>
+                                    <stop offset="50%" style="stop-color:#ffed4e"/>
+                                    <stop offset="100%" style="stop-color:#d4af37"/>
+                                </linearGradient>
+                                <linearGradient id="redGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#dc2626"/>
+                                    <stop offset="50%" style="stop-color:#ef4444"/>
+                                    <stop offset="100%" style="stop-color:#b91c1c"/>
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Main logo circle with urban style -->
+                            <circle cx="17.5" cy="17.5" r="16" fill="url(#logoGradientFooter)" stroke="#ffd700" stroke-width="1.5"/>
+                            
+                            <!-- Crown-like design inspired by the image -->
+                            <path d="M5.5 13 L9.5 9 L13.5 11 L17.5 7 L21.5 11 L25.5 9 L29.5 13 L28 23 L7 23 Z" fill="url(#goldGradientFooter)" stroke="#000" stroke-width="0.3"/>
+                            
+                            <!-- Central "2" with bold styling -->
+                            <text x="17.5" y="21" text-anchor="middle" fill="#000000" font-size="14" font-weight="900" font-family="Arial">2</text>
+                            
+                            <!-- Red accent elements -->
+                            <circle cx="12.5" cy="16" r="1.8" fill="url(#redGradientFooter)" opacity="0.9"/>
+                            <circle cx="22.5" cy="16" r="1.8" fill="url(#redGradientFooter)" opacity="0.9"/>
+                            
+                            <!-- Text "OUTFIT" with urban font style -->
+                            <text x="42" y="16" fill="url(#textGradientFooter)" font-size="12" font-weight="900" font-family="Arial" letter-spacing="1.2px">OUTFIT</text>
+                            
+                            <!-- Large stylized "2" with street style -->
+                            <text x="110" y="25" fill="url(#goldGradientFooter)" font-size="24" font-weight="900" font-family="Arial" stroke="#000" stroke-width="0.3">2</text>
+                            
+                            <!-- Text "STAR" -->
+                            <text x="130" y="28" fill="url(#textGradientFooter)" font-size="12" font-weight="900" font-family="Arial" letter-spacing="1.2px">STAR</text>
+                            
+                            <!-- Urban decorative elements -->
+                            <rect x="42" y="19" width="65" height="1.8" fill="url(#goldGradientFooter)" opacity="0.8"/>
+                            <rect x="125" y="11" width="45" height="1.2" fill="url(#redGradientFooter)" opacity="0.7"/>
+                            
+                            <!-- Street-style stars -->
+                            <polygon points="180,13 181.5,15.5 184,15.5 182.2,17 182.8,19.5 180,18.2 177.2,19.5 177.8,17 176,15.5 178.5,15.5" fill="url(#goldGradientFooter)"/>
+                            <polygon points="186,19 187,21 188.5,21 187.5,22 188,24 186,23 184,24 184.5,22 183.5,21 185,21" fill="url(#redGradientFooter)"/>
+                            <polygon points="182,26 183,28 184.5,28 183.5,29 184,31 182,30 180,31 180.5,29 179.5,28 181,28" fill="url(#goldGradientFooter)"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Mode de luxe accessible à tous. Découvrez l'élégance des stars à prix abordables.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-sm uppercase tracking-wide">Navigation</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-black transition-colors">Accueil</a></li>
+                        <li><a href="#collection" class="hover:text-black transition-colors">Collection</a></li>
+                        <li><a href="#contact" class="hover:text-black transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">À propos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-sm uppercase tracking-wide">Service Client</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-black transition-colors">Livraison</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Retours</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Guide des tailles</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-sm uppercase tracking-wide">Suivez-nous</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-xs text-gray-500">Rejoignez notre communauté de fashionistas</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-8 text-center">
+                <p class="text-gray-600 text-sm">&copy; 2024 Outfit 2 Star. Tous droits réservés. | Mode de luxe accessible à tous</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Panier -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2-2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"/>
+                        </svg>
+                        Mon Panier
+                    </h3>
+                    <button id="closeCartModal" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+                </div>
+                
+                <!-- Liste des articles -->
+                <div id="cartItems" class="space-y-4 mb-6">
+                    <!-- Les articles seront ajoutés ici dynamiquement -->
+                </div>
+                
+                <!-- Message panier vide -->
+                <div id="emptyCart" class="text-center py-8">
+                    <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2-2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"/>
+                    </svg>
+                    <p class="text-gray-500 text-lg">Votre panier est vide</p>
+                    <p class="text-gray-400 text-sm">Ajoutez des articles pour commencer</p>
+                </div>
+                
+                <!-- Total et actions -->
+                <div id="cartSummary" class="border-t pt-4 hidden">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-lg font-semibold">Total:</span>
+                        <span id="cartTotal" class="text-2xl font-bold text-black">0 FCFA</span>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <button id="clearCart" class="flex-1 px-4 py-3 border border-red-300 text-red-600 rounded-lg hover:bg-red-50 font-medium">
+                            Vider le panier
+                        </button>
+                        <button id="proceedToCheckout" class="flex-1 bg-gradient-to-r from-black to-gray-800 text-white px-4 py-3 rounded-lg hover:from-gray-800 hover:to-gray-900 font-bold">
+                            Commander tout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de commande -->
+    <div id="orderModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Finaliser la commande</h3>
+                    <button id="closeModal" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+                </div>
+                
+                <!-- Produit sélectionné -->
+                <div id="selectedProduct" class="bg-gray-50 p-4 rounded-lg mb-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl font-bold text-gray-600">2</span>
+                        </div>
+                        <div>
+                            <h4 id="productName" class="font-semibold text-lg"></h4>
+                            <p id="productPrice" class="text-xl font-bold text-black"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire -->
+                <form id="orderForm" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Prénom *</label>
+                            <input type="text" id="firstName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent" placeholder="Votre prénom">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nom *</label>
+                            <input type="text" id="lastName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent" placeholder="Votre nom">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Taille *</label>
+                        <input type="text" id="height" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent" placeholder="Ex: 1m80, 1m65, etc.">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Numéro de téléphone *</label>
+                        <input type="tel" id="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent" placeholder="+225 XX XX XX XX XX">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Lieu d'habitation *</label>
+                        <textarea id="address" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent" placeholder="Votre adresse complète (quartier, ville, région)"></textarea>
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="flex space-x-3 pt-4">
+                        <button type="button" id="cancelOrder" class="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                            Annuler
+                        </button>
+                        <button type="submit" class="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 font-bold flex items-center justify-center space-x-2">
+                            <span>💳</span>
+                            <span>Payer avec Wave</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variables globales
+        let selectedProductData = {};
+        let cart = [];
+
+        // Fonctions du panier
+        function addToCart(product) {
+            const existingItem = cart.find(item => item.name === product.name);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: 1,
+                    id: Date.now() + Math.random()
+                });
+            }
+            
+            updateCartUI();
+            showCartNotification(product.name);
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartUI();
+        }
+
+        function updateQuantity(productId, newQuantity) {
+            if (newQuantity <= 0) {
+                removeFromCart(productId);
+                return;
+            }
+            
+            const item = cart.find(item => item.id === productId);
+            if (item) {
+                item.quantity = newQuantity;
+                updateCartUI();
+            }
+        }
+
+        function clearCart() {
+            cart = [];
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const cartCounter = document.getElementById('cartCounter');
+            const cartItems = document.getElementById('cartItems');
+            const emptyCart = document.getElementById('emptyCart');
+            const cartSummary = document.getElementById('cartSummary');
+            const cartTotal = document.getElementById('cartTotal');
+            
+            // Mettre à jour le compteur
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCounter.textContent = totalItems;
+            
+            if (cart.length === 0) {
+                emptyCart.style.display = 'block';
+                cartSummary.classList.add('hidden');
+                cartItems.innerHTML = '';
+                return;
+            }
+            
+            emptyCart.style.display = 'none';
+            cartSummary.classList.remove('hidden');
+            
+            // Afficher les articles
+            cartItems.innerHTML = cart.map(item => `
+                <div class="flex items-center space-x-4 bg-gray-50 p-4 rounded-lg">
+                    <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span class="text-xl font-bold text-gray-600">2</span>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-sm">${item.name}</h4>
+                        <p class="text-lg font-bold text-black">${item.price}</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="updateQuantity(${item.id}, ${item.quantity - 1})" 
+                                class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <span class="text-lg font-bold">-</span>
+                        </button>
+                        <span class="w-8 text-center font-semibold">${item.quantity}</span>
+                        <button onclick="updateQuantity(${item.id}, ${item.quantity + 1})" 
+                                class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <span class="text-lg font-bold">+</span>
+                        </button>
+                    </div>
+                    <button onclick="removeFromCart(${item.id})" 
+                            class="text-red-500 hover:text-red-700 p-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                        </svg>
+                    </button>
+                </div>
+            `).join('');
+            
+            // Calculer le total
+            const total = cart.reduce((sum, item) => {
+                const price = parseInt(item.price.replace(/[^\d]/g, ''));
+                return sum + (price * item.quantity);
+            }, 0);
+            
+            cartTotal.textContent = `${total.toLocaleString()} FCFA`;
+        }
+
+        function showCartNotification(productName) {
+            // Créer une notification temporaire
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-20 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+            notification.innerHTML = `
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span class="font-medium">${productName} ajouté au panier!</span>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animation d'entrée
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Animation de sortie et suppression
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+            
+            // Animation du compteur panier
+            const cartCounter = document.getElementById('cartCounter');
+            cartCounter.classList.add('animate-bounce');
+            setTimeout(() => {
+                cartCounter.classList.remove('animate-bounce');
+            }, 1000);
+        }
+
+        function openCartModal() {
+            document.getElementById('cartModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCartModal() {
+            document.getElementById('cartModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fonction pour ouvrir le modal de commande
+        function openOrderModal(productName, productPrice, button) {
+            selectedProductData = { name: productName, price: productPrice };
+            
+            document.getElementById('productName').textContent = productName;
+            document.getElementById('productPrice').textContent = productPrice;
+            document.getElementById('orderModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fonction pour fermer le modal
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            document.getElementById('orderForm').reset();
+        }
+
+        // Gestion des sélecteurs de pointure et taille
+        document.querySelectorAll('.size-selector').forEach(selector => {
+            selector.addEventListener('change', function() {
+                const productCard = this.closest('.product-item');
+                const button = productCard.querySelector('.btn-primary');
+                const selectedSize = this.value;
+                
+                if (selectedSize) {
+                    button.disabled = false;
+                    button.textContent = 'Ajouter';
+                    button.classList.remove('opacity-50', 'cursor-not-allowed', 'bg-gray-400');
+                    button.classList.add('btn-primary');
+                } else {
+                    button.disabled = true;
+                    button.textContent = 'Choisir pointure';
+                    button.classList.add('opacity-50', 'cursor-not-allowed', 'bg-gray-400');
+                    button.classList.remove('btn-primary');
+                }
+            });
+        });
+
+        // Add to cart functionality avec panier et pointures
+        document.querySelectorAll('.product-item .btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                // Ne pas traiter si le bouton est désactivé
+                if (this.disabled) {
+                    return;
+                }
+                
+                // Récupérer les informations du produit
+                const productCard = this.closest('.product-item');
+                const productName = productCard.querySelector('h3').textContent;
+                const productPrice = productCard.querySelector('.text-2xl.font-bold').textContent;
+                const sizeSelector = productCard.querySelector('.size-selector');
+                
+                let productNameWithSize = productName;
+                
+                // Si il y a un sélecteur de pointure/taille, vérifier qu'une taille est sélectionnée
+                if (sizeSelector) {
+                    const selectedSize = sizeSelector.value;
+                    if (!selectedSize) {
+                        // Faire clignoter le sélecteur pour attirer l'attention
+                        sizeSelector.classList.add('border-red-500', 'animate-pulse');
+                        setTimeout(() => {
+                            sizeSelector.classList.remove('border-red-500', 'animate-pulse');
+                        }, 2000);
+                        return;
+                    }
+                    // Déterminer si c'est une pointure ou une taille
+                    const isShoe = sizeSelector.querySelector('option[value="36"]') || sizeSelector.querySelector('option[value="40"]');
+                    const sizeLabel = isShoe ? 'Pointure' : 'Taille';
+                    productNameWithSize = `${productName} - ${sizeLabel} ${selectedSize}`;
+                }
+                
+                // Ajouter au panier
+                addToCart({
+                    name: productNameWithSize,
+                    price: productPrice,
+                    size: sizeSelector ? sizeSelector.value : null
+                });
+            });
+        });
+
+        // Gestionnaires d'événements pour les modals
+        document.getElementById('cartButton').addEventListener('click', openCartModal);
+        document.getElementById('closeCartModal').addEventListener('click', closeCartModal);
+        document.getElementById('clearCart').addEventListener('click', function() {
+            if (confirm('Êtes-vous sûr de vouloir vider votre panier ?')) {
+                clearCart();
+            }
+        });
+        
+        document.getElementById('proceedToCheckout').addEventListener('click', function() {
+            if (cart.length === 0) return;
+            
+            // Créer un résumé de la commande pour WhatsApp
+            const orderSummary = cart.map(item => 
+                `${item.name} x${item.quantity} - ${item.price}`
+            ).join('\n');
+            
+            const total = cart.reduce((sum, item) => {
+                const price = parseInt(item.price.replace(/[^\d]/g, ''));
+                return sum + (price * item.quantity);
+            }, 0);
+            
+            const orderRef = `O2S${Date.now().toString().slice(-6)}`;
+            
+            // Fermer le modal panier et ouvrir le modal de paiement
+            closeCartModal();
+            showMultipleItemsPaymentModal(cart, total, orderRef);
+        });
+
+        document.getElementById('closeModal').addEventListener('click', closeOrderModal);
+        document.getElementById('cancelOrder').addEventListener('click', closeOrderModal);
+
+        // Fermer les modals en cliquant à l'extérieur
+        document.getElementById('cartModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCartModal();
+            }
+        });
+        
+        document.getElementById('orderModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeOrderModal();
+            }
+        });
+
+        // Gestionnaire du formulaire de commande avec paiement Wave direct
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupérer les données du formulaire
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                height: document.getElementById('height').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                product: selectedProductData
+            };
+
+            // Vérifier que tous les champs sont remplis
+            if (!formData.firstName || !formData.lastName || !formData.height || !formData.phone || !formData.address) {
+                alert('Veuillez remplir tous les champs obligatoires.');
+                return;
+            }
+
+            // Extraire le montant numérique du prix
+            const priceText = formData.product.price;
+            const amount = priceText.replace(/[^\d]/g, ''); // Garde seulement les chiffres
+            
+            // Créer la référence de commande
+            const orderRef = `O2S${Date.now().toString().slice(-6)}`;
+            
+            // Simuler le processus de paiement Wave
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = '<span class="animate-spin">⏳</span> <span>Préparation du paiement...</span>';
+            submitButton.disabled = true;
+
+            setTimeout(() => {
+                // Fermer le modal d'abord
+                closeOrderModal();
+                
+                // Créer et afficher le modal de paiement Wave
+                showWavePaymentModal(formData, amount, orderRef);
+                
+                // Le compteur est déjà mis à jour par updateCartUI()
+                
+                // Réinitialiser le bouton
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }, 1500);
+        });
+
+        // Fonction pour afficher le modal de paiement pour plusieurs articles
+        function showMultipleItemsPaymentModal(cartItems, totalAmount, orderRef) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+            
+            const itemsList = cartItems.map(item => 
+                `<div class="flex justify-between items-center py-1">
+                    <span class="text-sm">${item.name} x${item.quantity}</span>
+                    <span class="text-sm font-semibold">${item.price}</span>
+                </div>`
+            ).join('');
+            
+            modal.innerHTML = `
+                <div class="bg-white rounded-lg max-w-md w-full p-6 max-h-[90vh] overflow-y-auto">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Paiement Wave</h3>
+                        <p class="text-gray-600">Commande: ${orderRef}</p>
+                    </div>
+                    
+                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
+                        <h4 class="font-semibold text-gray-700 mb-3">Articles commandés:</h4>
+                        <div class="space-y-1 mb-3">
+                            ${itemsList}
+                        </div>
+                        <div class="border-t pt-3 flex items-center justify-between">
+                            <span class="font-bold text-gray-700">Total:</span>
+                            <span class="text-2xl font-bold text-orange-600">${totalAmount.toLocaleString()} FCFA</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                        <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                            <span class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm mr-2">1</span>
+                            Effectuez le dépôt Wave
+                        </h4>
+                        <div class="bg-white border-2 border-orange-300 rounded-lg p-3 text-center mb-4">
+                            <div class="text-2xl font-bold text-orange-600">+225 07 20 46 78 13</div>
+                            <div class="text-lg font-semibold text-gray-800 mt-1">${totalAmount.toLocaleString()} FCFA</div>
+                            <button onclick="copyToClipboard('+22507204678113')" class="text-sm text-orange-600 hover:text-orange-700 mt-1">
+                                📋 Copier le numéro
+                            </button>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2 flex items-center">
+                            <span class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm mr-2">2</span>
+                            Prenez une capture d'écran
+                        </h4>
+                        <div class="bg-blue-50 border border-blue-200 rounded p-3 mb-4">
+                            <p class="text-sm text-blue-800">📱 Capturez l'écran de confirmation de votre paiement Wave</p>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2 flex items-center">
+                            <span class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm mr-2">3</span>
+                            Envoyez sur WhatsApp avec:
+                        </h4>
+                        <div class="bg-white border border-gray-300 rounded p-2 text-center font-mono text-sm mb-3">
+                            ${orderRef} - Commande multiple (${cartItems.length} articles)
+                        </div>
+                        <div class="text-center mb-4">
+                            <a href="https://wa.me/22507204678113?text=Bonjour,%20j'ai%20effectué%20le%20paiement%20pour%20la%20commande%20${orderRef}%20-%20Commande%20multiple%20(${cartItems.length}%20articles)" 
+                               class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 font-bold text-lg shadow-lg" target="_blank">
+                                <span>📱</span>
+                                <span>Envoyer sur WhatsApp</span>
+                            </a>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 rounded p-3">
+                            <p class="text-sm text-green-800 font-medium">⏱️ Délai de livraison: Maximum 2 semaines</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button onclick="this.closest('.fixed').remove(); document.body.style.overflow='auto';" class="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                            Fermer
+                        </button>
+                        <button onclick="openWaveApp('${totalAmount}', '${orderRef}')" class="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 font-bold">
+                            Ouvrir Wave
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            document.body.style.overflow = 'hidden';
+            
+            // Fermer en cliquant à l'extérieur
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.remove();
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Fonction pour afficher le modal de paiement Wave
+        function showWavePaymentModal(formData, amount, orderRef) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-lg max-w-md w-full p-6">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Paiement Wave</h3>
+                        <p class="text-gray-600">Commande: ${orderRef}</p>
+                    </div>
+                    
+                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="font-semibold text-gray-700">Produit:</span>
+                            <span class="text-gray-900">${formData.product.name}</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="font-semibold text-gray-700">Montant:</span>
+                            <span class="text-2xl font-bold text-orange-600">${amount} FCFA</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold text-gray-700">Client:</span>
+                            <span class="text-gray-900">${formData.firstName} ${formData.lastName}</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                        <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                            <span class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm mr-2">1</span>
+                            Effectuez le dépôt Wave
+                        </h4>
+                        <div class="bg-white border-2 border-orange-300 rounded-lg p-3 text-center mb-4">
+                            <div class="text-2xl font-bold text-orange-600">+225 07 20 46 78 13</div>
+                            <div class="text-lg font-semibold text-gray-800 mt-1">${amount} FCFA</div>
+                            <button onclick="copyToClipboard('+22507204678113')" class="text-sm text-orange-600 hover:text-orange-700 mt-1">
+                                📋 Copier le numéro
+                            </button>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2 flex items-center">
+                            <span class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm mr-2">2</span>
+                            Prenez une capture d'écran
+                        </h4>
+                        <div class="bg-blue-50 border border-blue-200 rounded p-3 mb-4">
+                            <p class="text-sm text-blue-800">📱 Capturez l'écran de confirmation de votre paiement Wave</p>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2 flex items-center">
+                            <span class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm mr-2">3</span>
+                            Envoyez sur WhatsApp avec:
+                        </h4>
+                        <div class="bg-white border border-gray-300 rounded p-2 text-center font-mono text-sm mb-3">
+                            ${orderRef} - ${formData.product.name}
+                        </div>
+                        <div class="text-center mb-4">
+                            <a href="https://wa.me/22507204678113?text=Bonjour,%20j'ai%20effectué%20le%20paiement%20pour%20la%20commande%20${orderRef}%20-%20${formData.product.name.replace(/ /g, '%20')}" 
+                               class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 font-bold text-lg shadow-lg" target="_blank">
+                                <span>📱</span>
+                                <span>Envoyer sur WhatsApp</span>
+                            </a>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 rounded p-3">
+                            <p class="text-sm text-green-800 font-medium">⏱️ Délai de livraison: Maximum 2 semaines</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button onclick="this.closest('.fixed').remove(); document.body.style.overflow='auto';" class="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                            Fermer
+                        </button>
+                        <button onclick="openWaveApp('${amount}', '${orderRef}')" class="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 font-bold">
+                            Ouvrir Wave
+                        </button>
+                    </div>
+                    
+
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            document.body.style.overflow = 'hidden';
+            
+            // Fermer en cliquant à l'extérieur
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.remove();
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Fonction pour copier le numéro
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Feedback visuel
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = '✅ Copié !';
+                button.style.color = '#16a34a';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.color = '';
+                }, 2000);
+            }).catch(function() {
+                // Fallback pour les navigateurs plus anciens
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                alert('Numéro copié: ' + text);
+            });
+        }
+
+        // Fonction pour essayer d'ouvrir Wave
+        function openWaveApp(amount, orderRef) {
+            // Essayer d'ouvrir l'app Wave avec un lien deep link
+            const waveDeepLink = `wave://send?phone=22507204678113&amount=${amount}&note=${orderRef}`;
+            const waveWebLink = `https://wave.com/send?phone=22507204678113&amount=${amount}&note=${orderRef}`;
+            
+            // Créer un lien temporaire et cliquer dessus
+            const link = document.createElement('a');
+            link.href = waveDeepLink;
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Fallback vers le web après 2 secondes si l'app ne s'ouvre pas
+            setTimeout(() => {
+                if (confirm('Wave ne s\'est pas ouvert automatiquement. Voulez-vous essayer via le navigateur ?')) {
+                    window.open(waveWebLink, '_blank');
+                }
+            }, 2000);
+        }
+
+        // Category filtering
+        document.querySelectorAll('.category-filter').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-filter').forEach(btn => {
+                    btn.classList.remove('active', 'bg-black', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-gray-700');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active', 'bg-black', 'text-white');
+                this.classList.remove('bg-gray-100', 'text-gray-700');
+                
+                // Get filter category
+                const filterCategory = this.id.replace('filter', '').toLowerCase();
+                
+                // Show/hide products
+                document.querySelectorAll('.product-item').forEach(item => {
+                    if (filterCategory === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        const itemCategory = item.dataset.category;
+                        if (itemCategory === filterCategory) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Newsletter subscription with enhanced feedback
+        const newsletterButton = document.querySelector('section.bg-black button');
+        if (newsletterButton) {
+            newsletterButton.addEventListener('click', function() {
+                const emailInput = document.querySelector('input[type="email"]');
+                const email = emailInput.value;
+                
+                if (email && email.includes('@')) {
+                    this.innerHTML = 'Merci ! ✓';
+                    this.classList.remove('from-yellow-400', 'to-yellow-600');
+                    this.classList.add('bg-green-500', 'text-white');
+                    
+                    setTimeout(() => {
+                        this.innerHTML = 'S\'abonner';
+                        this.classList.add('from-yellow-400', 'to-yellow-600');
+                        this.classList.remove('bg-green-500', 'text-white');
+                        emailInput.value = '';
+                    }, 3000);
+                } else {
+                    this.innerHTML = 'Email invalide ✗';
+                    this.classList.add('bg-red-500', 'text-white');
+                    
+                    setTimeout(() => {
+                        this.innerHTML = 'S\'ab
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97b748aa1308b7a7',t:'MTc1NzI1OTQwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
